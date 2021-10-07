@@ -1934,6 +1934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoostDistance: 25
+  Lose: {fileID: 1793784881}
 --- !u!114 &1690453253
 MonoBehaviour:
   m_ObjectHideFlags: 0

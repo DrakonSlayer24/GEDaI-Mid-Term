@@ -18,7 +18,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Lose.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
     }
 
     void FixedUpdate()
@@ -47,8 +50,7 @@ public class Movement : MonoBehaviour
         if (rock)
         {
             Destroy(RockCol.gameObject);
-            Lose.SetActive(true);
-            Time.timeScale = 0;
+            Lose.SetActive(true); 
         }
     }
 
